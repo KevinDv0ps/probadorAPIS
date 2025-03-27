@@ -1,0 +1,51 @@
+/* Estilos para el NavBar */
+nav {
+    background-color: #333;  /* Fondo oscuro para el nav */
+    padding: 10px 20px;  /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra sutil para dar profundidad */
+    position: center;  /* Fija el nav en la parte central de la pantalla */
+  }
+  
+  nav ul {
+    list-style-type: none;  /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex;  /* Usamos flexbox para alinear los elementos en una fila */
+    justify-content: center;  /* Centra los elementos */
+  }
+  
+  
+  nav ul li {
+    margin: 0 15px;  /* Espaciado entre los elementos */
+  }
+  
+  nav ul li a {
+    text-decoration: none;  /* Elimina subrayado de los enlaces */
+    color: white;  /* Color blanco para los enlaces */
+    font-size: 16px;  /* Tamaño de la fuente */
+    font-weight: 500;  /* Peso de la fuente */
+    transition: color 0.3s, transform 0.3s;  /* Transiciones suaves */
+  }
+  
+  nav ul li a:hover {
+    color: #4CAF50;  /* Color verde al pasar el mouse */
+    transform: scale(1.1);  /* Efecto de escala al pasar el mouse */
+  }
+  
+  nav ul li a.active {
+    color: #FF6347;  /* Color para el enlace activo */
+    font-weight: 700;  /* Mayor peso para el enlace activo */
+  }
+  
+  /* Estilo responsive para pantallas pequeñas */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;  /* En pantallas pequeñas, los elementos del menú se apilan verticalmente */
+      align-items: center;  /* Centra los elementos */
+    }
+  
+    nav ul li {
+      margin: 10px 0;  /* Más espacio entre los elementos cuando están apilados */
+    }
+  }
+  
